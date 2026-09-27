@@ -1,0 +1,6 @@
+{
+  "name": "Linha 31: An Endless Tram Ride",
+  "description": "An endless, atmospheric 3D ride on Lisbon's historic Linha 31 tram across sunlit cobblestone hills, tiled houses, and winding tracks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
