@@ -2,6 +2,7 @@
 import type {Metadata} from 'next';
 // @ts-ignore -- Next.js font types are unavailable in this environment.
 import { Barlow, Barlow_Condensed } from 'next/font/google';
+import { createElement, type ReactNode } from 'react';
 // @ts-ignore -- CSS declarations are unavailable in this environment.
 import './globals.css';
 
@@ -37,10 +38,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
-  return (
-    <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
-      <body suppressHydrationWarning>{children}</body>
-    </html>
+export default function RootLayout({children}: {children: ReactNode}) {
+  return createElement(
+    'html',
+    { lang: 'en', className: `${barlow.variable} ${barlowCondensed.variable}` },
+    createElement('body', { suppressHydrationWarning: true }, children),
   );
 }
