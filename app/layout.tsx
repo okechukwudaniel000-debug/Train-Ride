@@ -1,5 +1,8 @@
+// @ts-ignore -- Next.js types are unavailable in this environment.
 import type {Metadata} from 'next';
+// @ts-ignore -- Next.js font types are unavailable in this environment.
 import { Barlow, Barlow_Condensed } from 'next/font/google';
+// @ts-ignore -- CSS declarations are unavailable in this environment.
 import './globals.css';
 
 const barlow = Barlow({
